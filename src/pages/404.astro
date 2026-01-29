@@ -1,0 +1,31 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import { SITE } from "@/config";
+---
+
+<Layout title={`404 Not Found | ${SITE.title}`}>
+  <Header />
+
+  <main
+    id="main-content"
+    class="app-layout flex flex-1 items-center justify-center"
+  >
+    <div class="mb-14 flex flex-col items-center justify-center">
+      <h1 class="text-9xl font-bold text-accent">40404</h1>
+      <span aria-hidden="true">¯\_(ツ)_/¯</span>
+      <p class="mt-4 text-2xl sm:text-3xl">没找到页面</p>
+      <p class="mt-2 text-2xl sm:text-1xl">文章或页面可能被删除或移动</p>
+      <LinkButton
+        href="/"
+        class="my-6 text-lg underline decoration-dashed underline-offset-8"
+      >
+        回去主页！
+      </LinkButton>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
