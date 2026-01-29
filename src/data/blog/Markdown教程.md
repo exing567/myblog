@@ -34,7 +34,7 @@ description:
 # Markdown 基础语法
 
 Markdown（简称 MD）是一种轻量级标记语言，用极少的符号写出结构清晰、可读性很强的文档。废话不多说了
-从代码的34-324行的教程来自GPT
+从代码的34-324行的教程来自GPT。前情提要：**并不一定包含所有的md语法！**
 
 ---
 
@@ -328,6 +328,7 @@ console.log("Hello Markdown!");
 *教程主要来自astropaper的文章*
 
 ## 引用图片，标出处
+
 ### 代码
 ``` md
 <figure>
@@ -352,5 +353,134 @@ console.log("Hello Markdown!");
   </figcaption>
 </figure>
 
-### 分析
+## 在代码段里添加强调
+### 代码1
 
+````md
+```ts file="src/content.config.ts"
+export const blogSchema = z.object({
+  // ...
+  draft: z.boolean().optional(),
+  // [!code highlight:1]
+  tags: z.array(z.string()).default(["others"]), // replace "others" with whatever you want
+  // ...
+});
+```
+````
+
+### 效果一
+
+```ts file="src/content.config.ts"
+export const blogSchema = z.object({
+  // ...
+  draft: z.boolean().optional(),
+  // [!code highlight:1]
+  tags: z.array(z.string()).default(["others"]), // replace "others" with whatever you want
+  // ...
+});
+```
+
+### 代码2
+
+````md
+```md
+---
+# frontmatter
+---
+
+Here are some recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
+
+<!-- [!code ++] -->
+## Table of contents
+
+<!-- the rest of the post -->
+```
+````
+
+### 效果2
+
+```md
+---
+# frontmatter
+---
+
+Here are some recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
+
+<!-- [!code ++] -->
+## Table of contents
+
+<!-- the rest of the post -->
+```
+
+### 效果3
+
+````md
+```js file="astro.config.ts"
+// ...
+// [!code --:5]
+import {
+  transformerNotationDiff,
+  transformerNotationHighlight,
+  transformerNotationWordHighlight,
+} from "@shikijs/transformers";
+
+export default defineConfig({
+  // ...
+  markdown: {
+    remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
+    shikiConfig: {
+      // For more themes, visit https://shiki.style/themes
+      themes: { light: "min-light", dark: "night-owl" },
+      defaultColor: false,
+      wrap: false,
+      transformers: [
+        transformerFileName(),
+      // [!code --:3]
+        transformerNotationHighlight(),
+        transformerNotationWordHighlight(),
+        transformerNotationDiff({ matchAlgorithm: "v3" }),
+      ],
+    },
+  },
+  // ...
+}
+```
+````
+
+其中的 `[!code --:n]` 的n就是强调下面多少行的数。
+
+###  效果3
+
+```js file="astro.config.ts"
+// ...
+// [!code --:5]
+import {
+  transformerNotationDiff,
+  transformerNotationHighlight,
+  transformerNotationWordHighlight,
+} from "@shikijs/transformers";
+
+export default defineConfig({
+  // ...
+  markdown: {
+    remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
+    shikiConfig: {
+      // For more themes, visit https://shiki.style/themes
+      themes: { light: "min-light", dark: "night-owl" },
+      defaultColor: false,
+      wrap: false,
+      transformers: [
+        transformerFileName(),
+      // [!code --:3]
+        transformerNotationHighlight(),
+        transformerNotationWordHighlight(),
+        transformerNotationDiff({ matchAlgorithm: "v3" }),
+      ],
+    },
+  },
+  // ...
+}
+```
+
+## 结语
+还会有更多的md语法等着我探索，在这里感谢 [satnaing](https://github.com/satnaing) 的仓库。
