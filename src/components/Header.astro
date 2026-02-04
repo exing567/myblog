@@ -102,7 +102,7 @@ const isActive = (path: string) => {
                     "active-nav [&>svg]:stroke-accent": isActive("/archives"),
                   },
                 ]}
-                title="Archives"
+                title="发布日程"
                 aria-label="archives"
               >
                 <IconArchive class="hidden sm:inline-block" />
@@ -118,7 +118,7 @@ const isActive = (path: string) => {
               "focus-outline flex p-3 sm:p-1",
               { "[&>svg]:stroke-accent": isActive("/search") },
             ]}
-            title="Search"
+            title="搜索"
             aria-label="search"
           >
             <IconSearch />
@@ -131,7 +131,7 @@ const isActive = (path: string) => {
               <button
                 id="theme-btn"
                 class="focus-outline relative size-12 p-4 sm:size-8 hover:[&>svg]:stroke-accent"
-                title="Toggles light & dark"
+                title="白天&黑夜模式"
                 aria-label="auto"
                 aria-live="polite"
               >

@@ -6,8 +6,8 @@ export const SITE = {
   title: "XJJ后花园",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerIndex: 5,
-  postPerPage: 5,
+  postPerIndex: 5, // 首页每页文章数量
+  postPerPage: 7, // 文章页面每页文章数量
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   showBackButton: true, // 返回按钮显示

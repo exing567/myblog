@@ -21,6 +21,7 @@ author: XJJ
 pubDatetime: 2026-01-29T12:35:35Z
 modDatetime: 2026-01-29T15:00:15.170Z
 title: Markdown教程
+slug: teaching
 featured: true
 draft: false
 tags:
@@ -28,7 +29,19 @@ tags:
   - 教程
 description:
   一个教我自己学md的一篇文章
+ogImage: ../../assets/images/forrest-gump-quote.png
 ---
+```
+我这篇教程没加上`slug`和`ogImage`参数。
+
+## 发布文章前的路径选择：
+```bash
+# Example: 文章的本地路径到URL路径的变化
+src/data/blog/very-first-post.md          -> mysite.com/posts/very-first-post
+src/data/blog/2025/example-post.md        -> mysite.com/posts/2025/example-post
+src/data/blog/_2026/another-post.md       -> mysite.com/posts/another-post
+src/data/blog/docs/_legacy/how-to.md      -> mysite.com/posts/docs/how-to
+src/data/blog/Example Dir/Dummy Post.md   -> mysite.com/posts/example-dir/dummy-post
 ```
 
 # Markdown 基础语法
