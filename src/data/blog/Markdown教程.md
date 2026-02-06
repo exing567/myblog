@@ -12,7 +12,7 @@ description:
   一个教我自己学md的一篇文章
 ---
 
-## 目录
+## Table of contents
 
 # 文章开始前
 
