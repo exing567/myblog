@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "友站s"
+title: "友站"
 ---
 ### 全无aff，如有会标出
 
