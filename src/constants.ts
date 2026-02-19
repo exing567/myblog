@@ -16,13 +16,13 @@ export const SOCIALS: Social[] = [
   {
     name: "GitHub",
     href: "https://github.com/exing567/myblog",
-    linkTitle: `${SITE.title} on GitHub`,
+    linkTitle: `${SITE.title} 的GitHub仓库`,
     icon: IconGitHub,
   },
   {
     name: "Mail",
     href: "mailto:hello@xjj.sh",
-    linkTitle: `Send an email to ${SITE.title}`,
+    linkTitle: `发邮箱给 ${SITE.title} `,
     icon: IconMail,
   },
 ] as const;
@@ -43,7 +43,7 @@ export const SHARE_LINKS: Social[] = [
   {
     name: "Mail",
     href: "mailto:?subject=See%20this%20post&body=",
-    linkTitle: "分享邮箱邮箱",
+    linkTitle: "分享邮箱",
     icon: IconMail,
   },
 ] as const;
