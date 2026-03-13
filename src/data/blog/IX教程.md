@@ -5,6 +5,7 @@ modDatetime: 2026-03-13T20:00:00Z
 title: IX教程
 featured: true
 draft: false
+slug: IXLEARN
 tags:
   - 学习
   - 教程

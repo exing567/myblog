@@ -10,3 +10,5 @@ title: "友站"
 
 ## 博客
 - [Stocking 博客](https://blog.ninonakano.jp/)
+- [Tom.Chicken](https://blog.tomchicken.icu/)
+- [cshaizhihao](https://zaki.zze.cc/)
