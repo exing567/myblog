@@ -1,16 +1,16 @@
 ---
 author: XJJ
-pubDatetime: 2026-03-13T20:00:00Z
-modDatetime: 2026-03-13T20:00:00Z
-title: IX教程
+pubDatetime: 2026-03-13T20:01:35Z
+modDatetime: 2026-03-11T20:02:11Z
+title: IX教程(简易版1.1)
+slug: ix1.1
 featured: true
 draft: false
-slug: IXLEARN
 tags:
-  - 学习
   - 教程
+  - 学习
 description:
-  一个教学如何搭建IX的一篇文章
+  快速部署ix的教程
 ---
 
 # 来吧！走起！
