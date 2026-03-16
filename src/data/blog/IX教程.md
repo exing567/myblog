@@ -21,17 +21,42 @@ description:
 **面板**：flux（多啦面板）
 **前提准备**：dd机器（应该就这个吧，如果少了可以补充）
 
-等nodeimage修好后会加上图片，如果有任何错误都可以写出来
-
 ---
 
 ### DD 脚本
-来自[酒神](https://www.nodeseek.com/post-5159-1)
+来自[bin456789](https://github.com/bin456789/reinstall)
 有些ix需要大厂前置当跳板才能上去安装
 
 ```ssh
-curl -so OsMutation.sh https://raw.githubusercontent.com/LloydAsp/OsMutation/main/OsMutation.sh && chmod u+x OsMutation.sh && ./OsMutation.sh
+curl -O https://cnb.cool/bin456789/reinstall/-/git/raw/main/reinstall.sh || wget -O ${_##*/} $_
 ```
+
+下载后在下面选择你要重装的系统
+
+```ssh
+bash reinstall.sh anolis      7|8|23
+                  rocky       8|9|10
+                  oracle      8|9|10
+                  almalinux   8|9|10
+                  opencloudos 8|9|23
+                  centos      9|10
+                  fnos        1
+                  nixos       25.11
+                  fedora      42|43
+                  debian      9|10|11|12|13
+                  alpine      3.20|3.21|3.22|3.23
+                  opensuse    15.6|16.0|tumbleweed
+                  openeuler   20.03|22.03|24.03|25.09
+                  ubuntu      16.04|18.04|20.04|22.04|24.04|25.10 [--minimal]
+                  kali
+                  arch
+                  gentoo
+                  aosc
+                  redhat      --img="http://access.cdn.redhat.com/xxx.qcow2"
+```
+
+而我选择的就是`bash reintall.sh ubuntu 22.04 --password PASSWORD` PASSWORD为你的密码
+回车后，等待10-20分钟，就可以登录了！
 
 ---
 
