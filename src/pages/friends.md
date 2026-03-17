@@ -9,6 +9,6 @@ title: "友站"
 - [无限次元](https://api.aiacg.de "Sora2中转站")
 
 ## 博客
-- [Stocking 博客](https://blog.ninonakano.jp/)
+- [Stocking](https://blog.ninonakano.jp/)
 - [Tom.Chicken](https://blog.tomchicken.icu/)
 - [cshaizhihao](https://zaki.zze.cc/)

@@ -23,7 +23,7 @@ description:
 
 ---
 
-### DD 脚本
+## DD 脚本
 来自[bin456789](https://github.com/bin456789/reinstall)
 有些ix需要大厂前置当跳板才能上去安装
 
@@ -55,12 +55,12 @@ bash reinstall.sh anolis      7|8|23
                   redhat      --img="http://access.cdn.redhat.com/xxx.qcow2"
 ```
 
-而我选择的就是`bash reintall.sh ubuntu 22.04 --password PASSWORD` PASSWORD为你的密码
+而我选择的就是`bash reinstall.sh ubuntu 22.04 --password PASSWORD` PASSWORD为你的密码
 回车后，等待10-20分钟，就可以登录了！
 
 ---
 
-### 安装多啦面板
+## 安装多啦面板
 
 *这里补充下，我推荐的方式是你有一个主控机器，这样就不会是flux在ix上面占用过高的内存，如果不选择可以跳过；选择了步骤也是一样的*
 
@@ -86,7 +86,7 @@ curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/pane
 
 ---
 
-### 添加节点
+## 添加节点
 来到节点监控->新建节点
 （落地端，ix端）
 
@@ -111,7 +111,7 @@ curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/pane
 
 ---
 
-### 添加隧道
+## 添加隧道
 
 进入隧道管理，新建，隧道类型选择隧道转发，选择tcp协议
 ![image](https://0040.my/i/2026/03/13/x9n8fx.webp)
@@ -119,7 +119,7 @@ curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/pane
 
 ---
 
-### 添加转发
+## 添加转发
 
 正常添加，输入你的ip+端口就行
 ![image](https://0040.my/i/2026/03/13/xa3x6g.webp)
