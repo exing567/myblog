@@ -3,6 +3,7 @@ author: XJJ
 pubDatetime: 2026-05-06T12:30:30Z
 modDatetime: 2026-05-06T12:30:30Z
 title: 开源iptables 控制脚本
+slug: ipt.sh
 featured: true
 draft: false
 tags:
