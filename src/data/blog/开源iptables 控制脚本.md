@@ -20,9 +20,10 @@ Github：https://github.com/exing567/iptables-control
 
 ## 快速开始
 
+```bash
+curl -L https://raw.githubusercontent.com/exing567/iptables-control/main/ipt.sh -o ipt.sh && chmod +x ipt.sh && sudo bash ipt.sh
 ```
-sudo bash <(curl -L https://raw.githubusercontent.com/exing567/iptables-control/main/ipt.sh)
-```
+运行此指令一次之后，再次运行只用输入`sudo bash ipt.sh`即可
 
 ---
 
