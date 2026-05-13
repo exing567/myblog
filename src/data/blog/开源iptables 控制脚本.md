@@ -35,10 +35,12 @@ curl -L https://raw.githubusercontent.com/exing567/iptables-control/main/ipt.sh 
 
 - 检查 `iptables`、`iptables-save`、`netfilter-persistent` 是否可用
 - 自动检查并开启 IPv4 转发：`net.ipv4.ip_forward=1`
-- 添加单条 TCP、UDP 或 TCP+UDP 端口转发
+- 添加单条 TCP、UDP 或 TCP+UDP 端口转发，目标支持 IPv4 或域名
 - 批量添加端口转发规则
-- 按备注 `comment` 删除单条或多条规则
-- 按入站端口、目标 IP、目标端口精确删除规则
+- 支持 DDNS 场景：保存域名配置，并在刷新时自动更新解析后的转发 IP
+- 从当前配置列表中选择要删除的转发规则
+- 删除时可选择 TCP、UDP 或 TCP+UDP，未选择的协议会保留
+- 批量按备注 `comment` 删除规则
 - 修改已有规则，即先删除旧规则再添加新规则
 - 查看转发规则摘要、完整 NAT/FORWARD 规则、带备注规则
 - 按端口、IP、备注搜索规则
@@ -48,7 +50,8 @@ curl -L https://raw.githubusercontent.com/exing567/iptables-control/main/ipt.sh 
 - 添加、删除、修改、导入、回滚前自动备份当前规则
 - 支持从备份文件回滚 `iptables` 规则
 - 保存规则到 `netfilter-persistent` 或 `/etc/iptables/rules.v4`
-- 安装 systemd 开机自检服务
+- 安装 systemd 自检/DDNS 定时刷新服务
+- 手动刷新域名/DDNS 转发规则
 - 记录操作日志到 `/var/log/ipt-forward-manager.log`
 
 > 我知道功能有很多很多，但我觉得都能用上吧。。
@@ -72,28 +75,29 @@ curl -L https://raw.githubusercontent.com/exing567/iptables-control/main/ipt.sh 
 添加/删除/修改
   8) 添加单条转发
   9) 批量添加转发
- 10) 按备注删除规则
+ 10) 选择配置删除规则
  11) 批量按备注删除规则
- 12) 按入站端口 + 目标 IP + 目标端口删除
- 13) 修改已有规则
+ 12) 修改已有规则
 
 配置导入导出
- 14) 导出当前转发为 .conf
- 15) 从 .conf 导入转发，导入前预览
+ 13) 导出当前转发为 .conf
+ 14) 从 .conf 导入转发，导入前预览
 
 备份/回滚/测试
- 16) 备份当前 iptables 规则
- 17) 查看备份列表
- 18) 从备份回滚
- 19) 测试目标端口 TCP 可达性
- 20) 保存当前规则
+ 15) 备份当前 iptables 规则
+ 16) 查看备份列表
+ 17) 从备份回滚
+ 18) 测试目标端口 TCP 可达性
+ 19) 保存当前规则
 
-开机自检/日志
- 21) 安装开机自检服务
- 22) 卸载开机自检服务
- 23) 查看脚本日志
+自检/DDNS/日志
+ 20) 安装自检/DDNS 刷新服务
+ 21) 卸载自检/DDNS 刷新服务
+ 22) 查看脚本日志
+ 23) 刷新域名/DDNS 转发
 
   0) 退出
 ```
+
 
 # 纯AI，零人工添加，绝对的纯！！！
