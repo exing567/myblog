@@ -101,7 +101,8 @@
   }
 
   .ansi-code {
-    @apply flex overflow-x-auto border border-border bg-slate-950 text-slate-100 outline-border;
+    @apply flex overflow-x-auto border border-border text-slate-100 outline-border;
+    background-color: rgb(18 19 20);
   }
 
   .ansi-code code {
