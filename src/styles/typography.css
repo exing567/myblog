@@ -100,6 +100,14 @@
     @apply bg-(--shiki-dark-bg) text-(--shiki-dark) [&_span]:text-(--shiki-dark);
   }
 
+  .ansi-code {
+    @apply flex overflow-x-auto border border-border bg-slate-950 text-slate-100 outline-border;
+  }
+
+  .ansi-code code {
+    @apply flex-[1_0_100%] bg-inherit p-4 text-inherit before:content-none after:content-none;
+  }
+
   /* Styles for Shiki transformers */
   /* https://shiki.style/packages/transformers */
   .astro-code {
