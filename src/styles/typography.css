@@ -100,16 +100,6 @@
     @apply bg-(--shiki-dark-bg) text-(--shiki-dark) [&_span]:text-(--shiki-dark);
   }
 
-  .app-prose pre.ansi-code {
-    @apply flex overflow-x-auto border border-border text-slate-100 outline-border;
-    background-color: rgb(18 19 20) !important;
-  }
-
-  .app-prose pre.ansi-code code {
-    @apply flex-[1_0_100%] p-4 text-inherit before:content-none after:content-none;
-    background-color: inherit !important;
-  }
-
   /* Styles for Shiki transformers */
   /* https://shiki.style/packages/transformers */
   .astro-code {
@@ -126,4 +116,25 @@
       @apply rounded-sm border border-border px-0.5 py-px;
     }
   }
+}
+
+.app-prose pre.ansi-code {
+  display: flex;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  background-color: rgb(18 19 20);
+  color: rgb(241 245 249);
+  outline-color: var(--border);
+}
+
+.app-prose pre.ansi-code code {
+  flex: 1 0 100%;
+  padding: 1rem;
+  background-color: inherit;
+  color: inherit;
+}
+
+.app-prose pre.ansi-code code::before,
+.app-prose pre.ansi-code code::after {
+  content: none;
 }

@@ -227,7 +227,7 @@ const renderAnsiToHtml = (input: string) => {
 };
 
 const renderAnsiBlock = (value: string) =>
-  `<pre class="ansi-code" data-language="ansi"><code>${renderAnsiToHtml(value)}</code></pre>`;
+  `<pre class="not-prose ansi-code" data-language="ansi"><code>${renderAnsiToHtml(value)}</code></pre>`;
 
 const visitTree = (node: MdastNode) => {
   if (!Array.isArray(node.children)) return;
