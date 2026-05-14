@@ -84,6 +84,7 @@ const styleToString = (state: AnsiState) => {
   const styles: string[] = [];
 
   if (state.fg) styles.push(`color:${state.fg}`);
+  if (state.bg) styles.push(`background-color:${state.bg}`);
   if (state.bold) styles.push("font-weight:700");
   if (state.dim) styles.push("opacity:0.7");
   if (state.italic) styles.push("font-style:italic");
@@ -157,9 +158,11 @@ const applySgr = (state: AnsiState, rawCodes: string) => {
       continue;
     }
     if (code >= 40 && code <= 47) {
+      state.bg = set8Color(code - 40, false);
       continue;
     }
     if (code === 49) {
+      state.bg = null;
       continue;
     }
     if (code >= 90 && code <= 97) {
@@ -167,6 +170,7 @@ const applySgr = (state: AnsiState, rawCodes: string) => {
       continue;
     }
     if (code >= 100 && code <= 107) {
+      state.bg = set8Color(code - 100, true);
       continue;
     }
     if (code === 38 || code === 48) {
@@ -174,6 +178,7 @@ const applySgr = (state: AnsiState, rawCodes: string) => {
       if (type === 5) {
         const color = palette256ToHex(codes[i + 2] ?? -1);
         if (code === 38) state.fg = color;
+        if (code === 48) state.bg = color;
         i += 2;
         continue;
       }
@@ -182,6 +187,7 @@ const applySgr = (state: AnsiState, rawCodes: string) => {
         if (rgb.length === 3 && rgb.every(channel => channel >= 0 && channel <= 255)) {
           const color = `rgb(${rgb.join(" ")})`;
           if (code === 38) state.fg = color;
+          if (code === 48) state.bg = color;
         }
         i += 4;
       }
