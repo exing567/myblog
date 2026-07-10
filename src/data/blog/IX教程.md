@@ -82,7 +82,7 @@ curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/pane
 #### 独享ix的随便端口就行
 
 之后你就可以进入面板->改密码->去**网站配置**页面填写后端的ip:端口，这个在你安装的时候就叫你填写了
-![屏幕截图 2026-03-13 200738](https://0040.my/i/2026/03/13/x7s3zu.webp)
+![屏幕截图 2026-03-13 200738](https://cdn.xjj.sh/img/blog/2026/03/13/x7s3zu.webp)
 
 ---
 
@@ -114,7 +114,7 @@ curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/pane
 ## 添加隧道
 
 进入隧道管理，新建，隧道类型选择隧道转发，选择tcp协议
-![image](https://0040.my/i/2026/03/13/x9n8fx.webp)
+![image](https://cdn.xjj.sh/img/blog/2026/03/13/x9n8fx.webp)
 入口选择你添加的入口机器，出口选择ix。创建后检查连通性！
 
 ---
@@ -122,5 +122,5 @@ curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/pane
 ## 添加转发
 
 正常添加，输入你的ip+端口就行
-![image](https://0040.my/i/2026/03/13/xa3x6g.webp)
+![image](https://cdn.xjj.sh/img/blog/2026/03/13/xa3x6g.webp)
 最后祝大家上网愉快，觉得写得好的给个鸡腿吧，谢谢☺️

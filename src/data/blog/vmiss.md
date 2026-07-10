@@ -14,7 +14,7 @@ description: 《我买过的机器》拆分条目：Vmiss 的线路、性能、I
 
 > 本文由《我买过的机器》中的 `Vmiss` 条目拆分而来，保留原始主观体验，并补充了可公开访问的外部参考链接。
 
-![image](https://0040.my/i/2026/03/11/w1l3xe.webp)
+![image](https://cdn.xjj.sh/img/blog/2026/03/11/w1l3xe.webp)
 [NQ测评（来自NS用户）](https://nodequality.com/r/kecMLnqBTnXpSgA53kHdGDmT1U8vRccS)
 现在这个机我已经抛掉了，因为表现实在有点不好，应该说是不够好。  
 具体配置是`1核1g10GB 500GB/mo 300Mbps`，价钱是5加元/月  

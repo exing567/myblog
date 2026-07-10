@@ -211,12 +211,12 @@ Markdown（简称 MD）是一种轻量级标记语言，用极少的符号写出
 #### 代码
 
 ```md
-![示例图片](http://5b0988e595225.cdn.sohucs.com/images/20190316/358f4c0708e94deaa72320377d76639a.jpeg)
+![示例图片](https://cdn.xjj.sh/img/blog/2026/07/10/358f4c0708e94deaa72320377d76639a.jpeg)
 ```
 
 #### 效果
 
-![示例图片](http://5b0988e595225.cdn.sohucs.com/images/20190316/358f4c0708e94deaa72320377d76639a.jpeg)
+![示例图片](https://cdn.xjj.sh/img/blog/2026/07/10/358f4c0708e94deaa72320377d76639a.jpeg)
 
 ---
 
@@ -348,7 +348,7 @@ console.log("Hello Markdown!");
 ``` md
 <figure>
   <img
-    src="https://images.pexels.com/photos/22690748/pexels-photo-22690748/free-photo-of-close-up-of-complicated-equations-written-on-a-blackboard.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    src="https://cdn.xjj.sh/img/blog/2026/07/10/free-photo-of-close-up-of-complicated-equations-written-on-a-blackboard.jpeg"
     alt="Free Close-up of complex equations on a chalkboard, showcasing chemistry and math symbols. Stock Photo"
   />
   <figcaption class="text-center">
@@ -360,7 +360,7 @@ console.log("Hello Markdown!");
 
 <figure>
   <img
-    src="https://images.pexels.com/photos/22690748/pexels-photo-22690748/free-photo-of-close-up-of-complicated-equations-written-on-a-blackboard.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    src="https://cdn.xjj.sh/img/blog/2026/07/10/free-photo-of-close-up-of-complicated-equations-written-on-a-blackboard.jpeg"
     alt="Free Close-up of complex equations on a chalkboard, showcasing chemistry and math symbols. Stock Photo"
   />
   <figcaption class="text-center">
