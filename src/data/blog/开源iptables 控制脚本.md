@@ -4,7 +4,7 @@ pubDatetime: 2026-05-05T12:30:30Z
 modDatetime: 2026-05-05T12:30:30Z
 title: 开源iptables 控制脚本
 slug: ipt-sh
-featured: true
+featured: false
 draft: false
 tags:
   - 脚本

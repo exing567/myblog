@@ -12,6 +12,7 @@ title: "友站"
 - [Stocking](https://blog.ninonakano.jp/)
 - [Tom.Chicken](https://blog.tomchicken.icu/)
 - [cshaizhihao](https://zaki.zze.cc/)
+- [higanbana](https://blog.ipfox.cc)
 
 ## 自己的服务
 - [机器探针](https://kam.xjj.sh)
