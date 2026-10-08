@@ -15,8 +15,8 @@ interface Social {
 export const SOCIALS: Social[] = [
   {
     name: "GitHub",
-    href: "https://github.com/exing567/myblog",
-    linkTitle: `${SITE.title} 的GitHub仓库`,
+    href: "https://github.com/exing567/",
+    linkTitle: `${SITE.title} 的GitHub`,
     icon: IconGitHub,
   },
   {
