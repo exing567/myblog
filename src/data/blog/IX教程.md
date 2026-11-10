@@ -13,19 +13,19 @@ description:
   快速部署ix的教程
 ---
 
-# 来吧！走起！
+# 配置和准备
 
 **机器**：YT HK BGP送的ix nat
 **入口**：阿里仙人
 **落地**：Bage HK Standard
 **面板**：flux（多啦面板）
-**前提准备**：dd机器（应该就这个吧，如果少了可以补充）
+**前提准备**：dd机器
 
 ---
 
 ## DD 脚本
 来自[bin456789](https://github.com/bin456789/reinstall)
-有些ix需要大厂前置当跳板才能上去安装
+有些ix需要大厂前置当跳板才能上去安装，但IX一般不用dd。
 
 ```ssh
 curl -O https://cnb.cool/bin456789/reinstall/-/git/raw/main/reinstall.sh || wget -O ${_##*/} $_
@@ -55,8 +55,8 @@ bash reinstall.sh anolis      7|8|23
                   redhat      --img="http://access.cdn.redhat.com/xxx.qcow2"
 ```
 
-而我选择的就是`bash reinstall.sh ubuntu 22.04 --password PASSWORD` PASSWORD为你的密码
-回车后，等待10-20分钟，就可以登录了！
+我选择重装为ubuntu 22.04 `bash reinstall.sh ubuntu 22.04 --password PASSWORD` 
+PASSWORD为你的密码。回车后，等待10-20分钟，就可以登录了！
 
 ---
 
